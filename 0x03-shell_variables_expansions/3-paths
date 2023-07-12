@@ -1,2 +1,2 @@
-#!/bin/bash
-echo "There are $count directories in the PATH."
+#!/bin/bash"
+echo $PATH | tr ':' '\n' | wc -1
