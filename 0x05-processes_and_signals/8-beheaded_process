@@ -1,7 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Start the highlander process
-while true; do
-    echo "To infinity and beyond"
-    sleep 2
-done
+# Bash script that kills the process 7-highlander
+pkill -f -SIGKILL 7-highlander
