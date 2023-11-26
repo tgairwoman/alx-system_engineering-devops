@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-
-# Parse the Apache log file and group visitors by IP and HTTP status code using awk
-awk '{ count[$1" "$9]++ } END { for (item in count) print count[item], item }' /path/to/apache_log_file | sort -rn
+#Bash script that groups visitors by IP and HTTP status code, and displays this data.
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | sort -nr
