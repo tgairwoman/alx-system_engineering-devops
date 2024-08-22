@@ -32,4 +32,4 @@ file { '/var/www/html/index.html':
 service { 'nginx':
   ensure  => running,
   require => Package['nginx'],
-}
+2-puppet_custom_http_response_header.pp}
